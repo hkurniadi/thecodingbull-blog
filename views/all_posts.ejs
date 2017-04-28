@@ -7,6 +7,13 @@
   <body>
     <h1>The Coding Bull - Simple Blog App</h1>
     <h2>All Posts</h2>
+    <p>Ordered by title in descending order</p>
+    <% allPosts.forEach((post) => { %>
+      <ul>
+        <li><h3>Title: <%= post.title %></h3></li>
+        <p>Description: <%= post.description %></p>
+      </ul>
+    <% }); %>
     <a href="/">Back to Index</a>
   </body>
 </html>
